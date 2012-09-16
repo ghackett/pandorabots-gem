@@ -8,5 +8,11 @@ Usage (eventually):
 	
 	response = Pandorabots.talk(bot_id, input, cust_id)
 	
-	response_text = response[:text]
-	cust_id = response[:cust_id]
+	if (response[:success])
+		bot_id = response[:bot_id]
+		cust_id = response[:cust_id]
+		input = response[:input]
+		ouput = response[:ouput]
+	else
+		error_message = response[:output]
+	end
