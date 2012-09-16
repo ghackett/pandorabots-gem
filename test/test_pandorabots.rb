@@ -19,8 +19,10 @@ end
 result = Pandorabots.talk("a9481f8c7e347656", "whats your name?")
 print_result result
 
+cust_id = result[:cust_id]
+puts "Customer Id: #{cust_id}"
 
-result = Pandorabots.talk("x", "whats your name?")
+result = Pandorabots.talk("a9481f8c7e347656", "Who do you work for?", cust_id)
 print_result result
 
 
