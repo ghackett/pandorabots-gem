@@ -3,7 +3,7 @@ require 'net/http'
 require "xmlsimple"
 
 module Pandorabots
-  VERSION = "0.0.0"
+  VERSION = "0.0.1"
   PANDORABOTS_URL = "http://www.pandorabots.com/pandora/talk-xml"
   
   #talk to a pandora bot
